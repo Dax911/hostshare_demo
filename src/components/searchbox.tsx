@@ -8,7 +8,7 @@ function SearchBarComp() {
   return (
     <InstantSearch searchClient={searchClient} indexName="dev_hostdemo2">
       <SearchBox />
-      <Hits hitComponent={ResultsCards} />
+      <Hits />
     </InstantSearch>
   );
 }
