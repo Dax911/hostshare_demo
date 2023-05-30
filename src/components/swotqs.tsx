@@ -20,7 +20,7 @@ export function SwotCardForm() {
 const [message, setMessage] = React.useState("");
 
     const sendMessage = async () => {
-        api.user.clickedGenerate.useMutation( );
+        api.users.clickedGenerate.useMutation();
       };
 
 

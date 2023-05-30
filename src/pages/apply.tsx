@@ -12,7 +12,6 @@ const Apply: NextPage = () => {
 
   const { isSignedIn } = useUser()
 
-  const newUserGen = api.create.addNewUsertoDb.useQuery();
 
 
   //check if user is logged in with clerk
@@ -50,12 +49,12 @@ const Apply: NextPage = () => {
         </h1>
 
         <div className="text-2xl dark:text-white">
-          
+
         </div>
         <div className="text-2xl dark:text-white">
           <p>Fill out the form below to apply.</p>
         </div>
-        
+
         <div className="p-4">
           <OnboardingForm />
         </div>

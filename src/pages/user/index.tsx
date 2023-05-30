@@ -24,7 +24,7 @@ if (getUser.isError) {
 
 useEffect(() => {
   if (getUser.data.hasCompletedSignup === false) {
-    setName();
+    setName(name);
   }
 }, [getUser]);
 

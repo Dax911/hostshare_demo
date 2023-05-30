@@ -20,24 +20,7 @@ const isFeatures = (path: string) => {
 }
 
 export default withClerkMiddleware(async (request: NextRequest) => {
-  const userLat = request.geo?.latitude
-  const userLong = request.geo?.longitude
-  const userCity = request.geo?.city
 
-  try {
-      // Call the Geolocation API
-      const geoResponse = await fetch(`https://ipwhois.app/json/${clientIp}`);
-      const geoData = await geoResponse.json();
-
-      if (geoData.latitude && geoData.longitude) {
-          req.geoLocation = {
-              latitude: geoData.latitude,
-              longitude: geoData.longitude
-          };
-      }
-  } catch (err) {
-      console.error(err);
-  }
 
   if (isPublic(request.nextUrl.pathname)) {
     return NextResponse.next()

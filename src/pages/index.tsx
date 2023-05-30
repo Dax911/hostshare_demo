@@ -5,7 +5,6 @@ import { buttonVariants } from "../components/ui/button";
 import { AlertTriangle } from "lucide-react";
 
 import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert";
-import { DemoGithub } from "../components/cards";
 
 import {
   InstantSearch,

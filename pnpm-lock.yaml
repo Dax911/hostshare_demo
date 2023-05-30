@@ -79,6 +79,9 @@ dependencies:
   node-fetch:
     specifier: ^3.3.1
     version: 3.3.1
+  openai:
+    specifier: link:langchain/llms/openai
+    version: link:langchain/llms/openai
   radix-ui:
     specifier: ^1.0.1
     version: 1.0.1(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)
