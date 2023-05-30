@@ -19,21 +19,20 @@ import {
 } from "./../components/ui/dropdown-menu"
 import { Separator } from "./../components/ui/separator"
 
-export function DemoGithub() {
+export function ResultsCards(props: Element) {
   return (
     <Card>
       <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
         <div className="space-y-1">
-          <CardTitle>shadcn/ui</CardTitle>
+          <CardTitle>Price</CardTitle>
           <CardDescription>
-            Beautifully designed components built with Radix UI and Tailwind
-            CSS.
+            DESCRIPTION
           </CardDescription>
         </div>
         <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground">
           <Button variant="secondary" className="px-3">
             <Star className="mr-2 h-4 w-4" />
-            Star
+            PRICE
           </Button>
           <Separator orientation="vertical" className="h-[20px]" />
           <DropdownMenu>
