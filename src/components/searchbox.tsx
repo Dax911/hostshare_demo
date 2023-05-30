@@ -16,6 +16,8 @@ const Hits: React.FC<Props> = ({ hits }) => (
         {/* Display the image, assuming hit.info.image is a URL to an image */}
         <img src={hit.info.mainImage.url} className="w-full h-48 object-cover rounded-md" />
 
+        <p className="text-md font-thin">{hit.info.location.city}</p>
+
 
 
 
@@ -28,7 +30,7 @@ const CustomHits = connectHits(Hits);
 
 function SearchBarComp() {
   return (
-    <InstantSearch searchClient={searchClient} indexName="dev_hostdemo2">
+    <InstantSearch searchClient={searchClient} indexName="hostdemo">
       <SearchBox />
       <CustomHits/>
     </InstantSearch>

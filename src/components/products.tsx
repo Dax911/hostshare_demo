@@ -4,7 +4,7 @@ import algoliasearch from 'algoliasearch';
 const client = algoliasearch('87MROQTWGM', '5da1787cc154b7bbde57ffd5acf84808');
 
 // initialize the index
-const index = client.initIndex('dev_hostdemo2');
+const index = client.initIndex('hostdemo');
 
 // the location data from Next.js response
 const lat = 'latitude'; // replace 'latitude' with the actual latitude
