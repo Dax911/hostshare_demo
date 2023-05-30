@@ -52,12 +52,10 @@ export default function IndexPage() {
           >
             Browse
           </Link>
-          <div className="instant_search">
           </div>
         </div>
         <SearchBarComp />
 
-      </div>
     </section>
   );
 }

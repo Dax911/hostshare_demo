@@ -13,6 +13,7 @@ export interface Category {
 }
 
 export interface Daum {
+  objectID: string
   ref: string
   info: Info
   category?: string
