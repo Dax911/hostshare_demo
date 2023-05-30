@@ -1,0 +1,93 @@
+.dark {
+    --background: 180 15% 15%; /* hsl(180, 15%, 15%) */
+    --foreground: 180 50% 80%; /* hsl(180, 50%, 80%) */
+
+    --muted: 180 30% 25%; /* hsl(180, 30%, 25%) */
+    --muted-foreground: 180 50% 70%; /* hsl(180, 50%, 70%) */
+
+    --popover: 180 15% 15%; /* hsl(180, 15%, 15%) */
+    --popover-foreground: 180 50% 65%; /* hsl(180, 50%, 65%) */
+
+    --border: 180 30% 30%; /* hsl(180, 30%, 30%) */
+    --input: 180 30% 30%; /* hsl(180, 30%, 30%) */
+
+    --card: 180 15% 15%; /* hsl(180, 15%, 15%) */
+    --card-foreground: 180 50% 80%; /* hsl(180, 50%, 80%) */
+
+    --primary: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --primary-foreground: 200 15% 95%; /* hsl(200, 15%, 95%) */
+
+    --secondary: 180 30% 40%; /* hsl(180, 30%, 40%) */
+    --secondary-foreground: 180 50% 60%; /* hsl(180, 50%, 60%) */
+
+    --accent: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --accent-foreground: 200 15% 95%; /* hsl(200, 15%, 95%) */
+
+    --destructive: 350 70% 65%; /* hsl(350, 70%, 65%) */
+    --destructive-foreground: 180 50% 90%; /* hsl(180, 50%, 90%) */
+
+    --ring: 180 40% 50%; /* hsl(180, 40%, 50%) */
+
+    --radius: 0.5rem;
+
+    --color-default: 180 50% 25%; /* hsl(180, 50%, 25%) */
+    --color-neutral: 180 50% 30%; /* hsl(180, 50%, 30%) */
+    --color-primary: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --color-secondary: 180 50% 60%; /* hsl(180, 50%, 60%) */
+    --color-accent: 180 50% 70%; /* hsl(180, 50%, 70%) */
+    --color-warning: 45 90% 60%; /* hsl(45, 90%, 60%) */
+    --color-error: 360 60% 65%; /* hsl(360, 60%, 65%) */
+    --color-success: 140 35% 50%; /* hsl(140, 35%, 50%) */
+    --color-info: 180 50% 70%; /* hsl(180, 50%, 70%) */
+    --bg-main: 180 15% 18%; /* hsl(180, 15%, 18%) */
+
+    --color-dark: 180 50% 10%; /* hsl(180, 50%, 10%) */
+    --color-light-blue: 180 50% 70%; /* hsl(180, 50%, 70%) */
+    --color-orange: 26 90% 60%; /* hsl(26, 90%, 60%) */
+    --color-blue: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --color-white: 200 15% 95%; /* hsl(200, 15%, 95%) */
+    --light: 200 15% 95%; /* hsl(200, 15%, 95%) */
+}
+
+:root {
+    --background: 23 40% 95%; /* hsl(23, 40%, 95%) */
+    --foreground: 223 15% 45%; /* hsl(223, 15%, 45%) */
+    --muted: 200 7% 89%; /* hsl(200, 7%, 89%) */
+    --muted-foreground: 224 9% 69%; /* hsl(224, 9%, 69%) */
+
+    --popover: 23 40% 95%; /* hsl(23, 40%, 95%) */
+    --popover-foreground: 223 15% 45%; /* hsl(223, 15%, 45%) */
+
+    --border: 224 19% 85%; /* hsl(224, 19%, 85%) */
+    --input: 224 19% 85%; /* hsl(224, 19%, 85%) */
+
+    --card: 23 40% 95%; /* hsl(23, 40%, 95%) */
+    --card-foreground: 223 15% 45%; /* hsl(223, 15%, 45%) */
+
+    --primary: 223 15% 45%; /* hsl(223, 15%, 45%) */
+    --primary-foreground: 200 7% 99%; /* hsl(200, 7%, 99%) */
+
+    --secondary: 200 7% 89%; /* hsl(200, 7%, 89%) */
+    --secondary-foreground: 223 15% 45%; /* hsl(223, 15%, 45%) */
+
+    --accent: 200 7% 89%; /* hsl(200, 7%, 89%) */
+    --accent-foreground: 223 15% 45%; /* hsl(223, 15%, 45%) */
+
+    --destructive: 350 70% 65%; /* hsl(350, 70%, 65%) */
+    --destructive-foreground: 200 7% 99%; /* hsl(200, 7%, 99%) */
+
+    --ring: 220 25% 75%; /* hsl(220, 25%, 75%) */
+
+    --radius: 0.5rem;
+
+    --color-default: 23 40% 90%; /* hsl(23, 40%, 90%) */
+    --color-neutral: 23 40% 80%; /* hsl(23, 40%, 80%) */
+    --color-primary: 187 60% 60%; /* hsl(187, 60%, 60%) */
+    --color-secondary: 204 45% 74%; /* hsl(204, 45%, 74%) */
+    --color-accent: 36 100% 70%; /* hsl(36, 100%, 70%) */
+    --color-warning: 44 100% 60%; /* hsl(44, 100%, 60%) */
+    --color-error: 350 70% 65%; /* hsl(350, 70%, 65%) */
+    --color-success: 140 35% 55%; /* hsl(140, 35%, 55%) */
+    --color-info: 202 100% 45%; /* hsl(202, 100%, 45%) */
+    --bg-main: 23 40% 90%; /* hsl(23, 40%, 90%) */
+  }

@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Recoleta";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Recoleta Regular DEMO"),
+    url("./../../public/Recoleta-RegularDEMO.woff") format("woff");
+}
+
+/*
+:root {
+   Cyan
+  --cyan-100: hsl(180, 26%, 46%);
+  --cyan-200: hsl(180, 34%, 42%);
+  --cyan-300: hsl(177, 84%, 36%);
+  --cyan-400: hsl(180, 56%, 15%);
+
+  --cyan-main: hsl(180, 50%, 38%)
+
+   Gray
+  --gray-100: hsl(0, 0%, 100%);
+  --gray-200: hsl(0, 4%, 98%);
+  --gray-300: hsl(32, 18%, 95%);
+  --gray-400: hsl(0, 0%, 95%);
+  --gray-500: hsl(0, 0%, 89%);
+  --gray-600: hsl(0, 0%, 82%);
+  --gray-700: hsl(0, 0%, 78%);
+  --gray-800: hsl(202, 3%, 67%);
+  --gray-900: hsl(0, 0%, 47%);
+  --gray-1000: hsl(0, 0%, 38%);
+  --gray-1100: hsl(0, 0%, 5%);
+
+  Blue
+  --blue-100: hsl(202, 9%, 48%);
+  --blue-200: hsl(204, 84%, 54%);
+  --blue-300: hsl(204, 90%, 57%);
+  --blue-400: hsl(204, 100%, 49%);
+  --blue-500: hsl(202, 14%, 39%);
+  --blue-600: hsl(213, 72%, 43%);
+
+   Red
+  --red-100: hsl(0, 100%, 92%);
+  --red-200: hsl(0, 94%, 63%);
+  --red-300: hsl(0, 89%, 59%);
+
+   Purple violet
+  --purpleViolet-100: hsl(268, 52%, 49%);
+
+   Scarlet red
+  --scarletRed-100: hsl(351, 83%, 60%);
+
+   Teal
+  --teal-100: hsl(147, 74%, 47%);
+
+
+
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* hsl(0, 0%, 100%) */
+    --foreground: 0 0% 13%; /* hsl(0, 0%, 13%) */
+    --muted: 210 40% 96.1%; /* hsl(210, 40%, 96.1%) */
+    --muted-foreground: 180 50% 38%; /* hsl(180, 50%, 38%) */
+
+    --popover: 0 0% 100%; /* hsl(0, 0%, 100%) */
+    --popover-foreground: 0 0% 13%; /* hsl(0, 0%, 13%) */
+
+    --border: 214.3 31.8% 91.4%; /* hsl(214.3, 31.8%, 91.4%) */
+    --input: 214.3 31.8% 91.4%; /* hsl(214.3, 31.8%, 91.4%) */
+
+    --card: 0 0% 100%; /* hsl(0, 0%, 100%) */
+    --card-foreground: 0 0% 13%; /* hsl(0, 0%, 13%) */
+
+    --primary: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --primary-foreground: 210 40% 98%; /* hsl(210, 40%, 98%) */
+
+    --secondary: 210 40% 96.1%; /* hsl(210, 40%, 96.1%) */
+    --secondary-foreground: 0 0% 13%; /* hsl(0, 0%, 13%) */
+
+    --accent: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --accent-foreground: 0 0% 13%; /* hsl(0, 0%, 13%) */
+
+    --destructive: 359 63% 55%; /* hsl(359, 63%, 55%) */
+    --destructive-foreground: 210 40% 98%; /* hsl(210, 40%, 98%) */
+
+    --ring: 180 50% 38%; /* hsl(180, 50%, 38%) */
+
+    --radius: 0.5rem;
+
+    --color-default: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --color-neutral: 0 0% 90%; /* hsl(0, 0%, 90%) */
+    --color-primary: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --color-secondary: 203 47% 76%; /* hsl(203, 47%, 76%) */
+    --color-accent: 38 100% 78%; /* hsl(38, 100%, 78%) */
+    --color-warning: 46 100% 57%; /* hsl(46, 100%, 57%) */
+    --color-error: 359 63% 55%; /* hsl(359, 63%, 55%) */
+    --color-success: 134 34% 50%; /* hsl(134, 34%, 50%) */
+    --color-info: 195 100% 50%; /* hsl(195, 100%, 50%) */
+    --bg-main: 0 0% 96%; /* hsl(0, 0%, 96%) */
+
+}
+.dark {
+    --background: 210 20% 15%; /* hsl(210, 20%, 15%) */
+    --foreground: 213 31% 91%; /* hsl(213, 31%, 91%) */
+
+    --muted: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --muted-foreground: 210 1.4% 95.9%; /* hsl(210, 1.4%, 95.9%) */
+
+    --popover: 210 20% 15%; /* hsl(210, 20%, 15%) */
+    --popover-foreground: 215 20.2% 65.1%; /* hsl(215, 20.2%, 65.1%) */
+
+    --border: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --input: 180 50% 38%; /* hsl(180, 50%, 38%) */
+
+    --card: 210 20% 15%; /* hsl(210, 20%, 15%) */
+    --card-foreground: 213 31% 91%; /* hsl(213, 31%, 91%) */
+
+    --primary: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --primary-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+
+    --secondary: 210 40% 96.1%; /* hsl(210, 40%, 96.1%) */
+    --secondary-foreground: 203 84% 15%; /* hsl(203, 84%, 15%) */
+
+    --accent: 180 26% 46%; /* hsl(180, 26%, 46%) */
+    --accent-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+
+    --destructive: 359 63% 55%; /* hsl(359, 63%, 55%) */
+    --destructive-foreground: 210 40% 98%; /* hsl(210, 40%, 98%) */
+
+    --ring: 202 56% 75%; /* hsl(202, 56%, 75%) */
+
+    --radius: 0.5rem;
+
+    --color-default: 0 0% 20%; /* hsl(0, 0%, 20%) */
+    --color-neutral: 180 50% 38%; /* hsl(180, 50%, 38%) */
+    --color-primary: 180 59% 38%; /* hsl(180, 50%, 38%) */
+    --color-secondary: 203 47% 76%; /* hsl(203, 47%, 76%) */
+    --color-accent: 38 100% 78%; /* hsl(38, 100%, 78%) */
+    --color-warning: 46 100% 57%; /* hsl(46, 100%, 57%) */
+    --color-error: 359 63% 55%; /* hsl(359, 63%, 55%) */
+    --color-success: 134 34% 50%; /* hsl(134, 34%, 50%) */
+    --color-info: 195 100% 50%; /* hsl(195, 100%, 50%) */
+    --bg-main: 210 20% 15%; /* hsl(210, 20%, 15%) */
+  }
+
+
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
