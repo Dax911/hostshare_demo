@@ -28,26 +28,24 @@ const Hit = ({ hit }: any) => (
 );
 
 const MapWithSearch = () => (
-  <div className="flex flex-col h-screen">
-    <div className="p-6">
+  <div className="grid grid-cols-4 h-screen gap-4">
+    <div className="col-span-1 p-6">
       <SearchBox />
+      <Hits hitComponent={Hit} />
     </div>
-    <div className="flex flex-row flex-grow">
-      <div className="flex-grow relative">
-        <GoogleMapsLoader apiKey={env.NEXT_PUBLIC_GOOGLE_MAPS_API}>
-          {(google: any) => (
-            <GeoSearch google={google}>
-              {({ hits }: any) => hits.map((hit: { objectID: string | number | null | undefined; }) => <Marker key={hit.objectID} hit={hit} />)}
-            </GeoSearch>
-          )}
-        </GoogleMapsLoader>
-      </div>
-      <div className="p-6 flex-grow">
-        <Hits hitComponent={Hit} />
-      </div>
+    <div className="col-span-3 relative">
+      <GoogleMapsLoader apiKey={env.NEXT_PUBLIC_GOOGLE_MAPS_API}>
+        {(google: any) => (
+          <GeoSearch google={google}>
+            {({ hits }: any) => hits.map((hit: { objectID: string | number | null | undefined; }) => <Marker key={hit.objectID} hit={hit} />)}
+          </GeoSearch>
+        )}
+      </GoogleMapsLoader>
     </div>
   </div>
 );
+
+
 
 
 const SearchPage = () => (
