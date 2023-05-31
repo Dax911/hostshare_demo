@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import { NavItem } from "./../types/nav"
 import { cn } from "./../lib/utils"
-import { Icons } from "./../components/icons"
+import Image from 'next/image';
 import { UserButton } from "@clerk/nextjs"
 
 interface MainNavProps {
@@ -14,7 +14,8 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10 ">
       <Link href="/" className="items-center hidden space-x-2 md:flex">
-        <Icons.logo className="w-6 h-6 light:hue-rotate-[270deg]" />
+      <Image src='/public/favicon.png' width={25}
+        height={25} alt={""} />
       </Link>
       <UserButton afterSignOutUrl="/" />
 

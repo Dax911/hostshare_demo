@@ -13,20 +13,7 @@ export const Icons = {
   sun: SunMedium,
   moon: Moon,
   twitter: Twitter,
-  logo: (props: LucideProps) => (
-    <svg
-      width="56"
-      height="56"
-      viewBox="0 0 56 56"
-      {...props}
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M13 0H0L21 28L0 56H13L34 28L13 0Z" fill="#CA4028" />
-      <path d="M55 0L39 21L32 12L41 0H55Z" fill="#EDEFE4" />
-      <path d="M32 44L39 35C44.5 42 55.4 56 55 56H41L32 44Z" fill="#EDEFE4" />
-    </svg>
-  ),
+
   gitHub: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
