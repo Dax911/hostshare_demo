@@ -23,7 +23,7 @@ interface Hit extends Daum{
 
 const Hit = ({ hit }: any) => (
   <div>
-    <p>{hit.name}</p>
+    <p>{hit.info.title}</p>
   </div>
 );
 
@@ -32,20 +32,23 @@ const MapWithSearch = () => (
     <div className="p-6">
       <SearchBox />
     </div>
-    <div className="flex-grow relative">
-      <GoogleMapsLoader apiKey={env.NEXT_PUBLIC_GOOGLE_MAPS_API}>
-        {(google: any) => (
-          <GeoSearch google={google}>
-            {({ hits }: any) => hits.map((hit: { objectID: string | number | null | undefined; }) => <Marker key={hit.objectID} hit={hit} />)}
-          </GeoSearch>
-        )}
-      </GoogleMapsLoader>
-    </div>
-    <div className="p-6">
-      <Hits hitComponent={Hit} />
+    <div className="flex flex-row flex-grow">
+      <div className="flex-grow relative">
+        <GoogleMapsLoader apiKey={env.NEXT_PUBLIC_GOOGLE_MAPS_API}>
+          {(google: any) => (
+            <GeoSearch google={google}>
+              {({ hits }: any) => hits.map((hit: { objectID: string | number | null | undefined; }) => <Marker key={hit.objectID} hit={hit} />)}
+            </GeoSearch>
+          )}
+        </GoogleMapsLoader>
+      </div>
+      <div className="p-6 flex-grow">
+        <Hits hitComponent={Hit} />
+      </div>
     </div>
   </div>
 );
+
 
 const SearchPage = () => (
   <InstantSearch indexName="hostdemo" searchClient={searchClient}>

@@ -40,7 +40,7 @@ export default function IndexPage() {
 
         <div className="flex items-center gap-4">
           <Link
-            href="/user"
+            href="/sign-in"
             rel="noreferrer"
             className={buttonVariants({ size: "lg" })}
           >
