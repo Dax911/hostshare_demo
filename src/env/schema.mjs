@@ -13,6 +13,7 @@ export const serverSchema = z.object({
   STRIPE_WEBHOOK_SECRET: z.string().optional(),
   ALGOLIA_APP_ID: z.string(),
   ALGOLIA_ADMIN_KEY: z.string(),
+  GOOGLE_MAPS_API: z.string(),
 })
 
 /**
@@ -28,6 +29,7 @@ export const serverEnv = {
   STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET,
   ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
   ALGOLIA_ADMIN_KEY: process.env.ALGOLIA_ADMIN_KEY,
+  GOOGLE_MAPS_API: process.env.GOOGLE_MAPS_API
 }
 
 /**
@@ -38,7 +40,8 @@ export const serverEnv = {
 export const clientSchema = z.object({
   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string(),
   NEXT_PUBLIC_ALGOLIA_SEARCH_KEY: z.string(),
-  NEXT_PUBLIC_ALGOLIA_APP_ID: z.string()
+  NEXT_PUBLIC_ALGOLIA_APP_ID: z.string(),
+  NEXT_PUBLIC_GOOGLE_MAPS_API: z.string()
 })
 
 /**
@@ -51,4 +54,5 @@ export const clientEnv = {
   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
   NEXT_PUBLIC_ALGOLIA_SEARCH_KEY: process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_KEY,
   NEXT_PUBLIC_ALGOLIA_APP_ID: process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
+  NEXT_PUBLIC_GOOGLE_MAPS_API: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API
 }

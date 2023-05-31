@@ -64,6 +64,9 @@ dependencies:
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
+  instantsearch.css:
+    specifier: ^8.0.0
+    version: 8.0.0
   lucide-react:
     specifier: ^0.214.0
     version: 0.214.0(react@18.2.0)
@@ -100,6 +103,9 @@ dependencies:
   react-instantsearch-dom:
     specifier: ^6.40.0
     version: 6.40.0(algoliasearch@4.17.1)(react-dom@18.2.0)(react@18.2.0)
+  react-instantsearch-dom-maps:
+    specifier: ^6.40.0
+    version: 6.40.0(algoliasearch@4.17.1)(react-dom@18.2.0)(react-instantsearch-dom@6.40.0)(react@18.2.0)
   react-instantsearch-hooks-web:
     specifier: ^6.44.0
     version: 6.44.0(algoliasearch@4.17.1)(react-dom@18.2.0)(react@18.2.0)
@@ -4130,6 +4136,10 @@ packages:
   /inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
+  /instantsearch.css@8.0.0:
+    resolution: {integrity: sha512-yU63cF9KdkyFFh7ynYQy39nh1MD1eVDHIaa/gdm8a/O9dTG/5P6hBF1ONoIbKTtjlxxsHS2S8MarCZZ0l31ajg==}
+    dev: false
+
   /instantsearch.js@4.56.0(algoliasearch@4.17.1):
     resolution: {integrity: sha512-A50GZjcK9c3o3y49fqOX6ghI4leCPAiz0h5xY/yvU7mMXCwwXZw1BsUbOPM02gDvaUdYvibycW7byVQno3DK1g==}
     peerDependencies:
@@ -5164,6 +5174,23 @@ packages:
       react-fast-compare: 3.2.2
     dev: false
 
+  /react-instantsearch-dom-maps@6.40.0(algoliasearch@4.17.1)(react-dom@18.2.0)(react-instantsearch-dom@6.40.0)(react@18.2.0):
+    resolution: {integrity: sha512-+Wsql+ijvPocmDY/o9qCewrx4yTjMDLdLHvZWzdtDl+Ve4obLGr9ghgVaZuKJP5f3EINwNZ7ou65YT1z39BKcA==}
+    peerDependencies:
+      algoliasearch: '>= 3.1 < 5'
+      react: '>= 16.3.0 < 19'
+      react-dom: '>= 16.3.0 < 19'
+      react-instantsearch-dom: 6.40.0
+    dependencies:
+      '@babel/runtime': 7.21.5
+      algoliasearch: 4.17.1
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-instantsearch-dom: 6.40.0(algoliasearch@4.17.1)(react-dom@18.2.0)(react@18.2.0)
+      scriptjs: 2.5.9
+    dev: false
+
   /react-instantsearch-dom@6.40.0(algoliasearch@4.17.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-bD+xIi05DeQ47svD4bMgv7rKpl2eKoDOjBU2rcQNBz9N9ryE1IOe6NWAHaDZWBd99eWX9Opwa1JHr3KtNtv2yA==}
     peerDependencies:
@@ -5365,6 +5392,10 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /scriptjs@2.5.9:
+    resolution: {integrity: sha512-qGVDoreyYiP1pkQnbnFAUIS5AjenNwwQBdl7zeos9etl+hYKWahjRTfzAZZYBv5xNHx7vNKCmaLDQZ6Fr2AEXg==}
     dev: false
 
   /search-insights@2.6.0:
