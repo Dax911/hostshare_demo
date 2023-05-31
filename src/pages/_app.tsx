@@ -17,10 +17,9 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <SubscriptionProvider stripePublishableKey="pk_test_51N71fQKU89VNxZdBpoReBHWkH6hP5FKrCdVu59ToHiNGtVqsRZaTILfgOp7ZBrdTbNrI8c1zVlyTsKZZs9kyZt2t00DJ9UYA3J">
       <Script
         defer
-        data-domain="quark.pridelabs.gg"
+        data-domain="demo.pridelabs.gg"
         src="https://plausible.io/js/script.js"
       />
-
       <ClerkProvider {...pageProps}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="relative flex min-h-screen flex-col">

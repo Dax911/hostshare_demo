@@ -53,8 +53,9 @@ export default function IndexPage() {
             Browse
           </Link>
           </div>
+          <SearchBarComp />
+
         </div>
-        <SearchBarComp />
 
     </section>
   );
