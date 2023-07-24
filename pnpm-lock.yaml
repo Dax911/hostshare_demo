@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@calcom/embed-react':
     specifier: ^1.0.12
@@ -68,8 +72,8 @@ dependencies:
     specifier: ^8.0.0
     version: 8.0.0
   lucide-react:
-    specifier: ^0.214.0
-    version: 0.214.0(react@18.2.0)
+    specifier: ^0.263.1
+    version: 0.263.1(react@18.2.0)
   micro:
     specifier: ^10.0.1
     version: 10.0.1
@@ -4474,8 +4478,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lucide-react@0.214.0(react@18.2.0):
-    resolution: {integrity: sha512-/vRi1wnFV2lqyIIkghQ3dDLu0eA9zykRQN9GZBwydzv+kB/2Q3S4X6OYB+aRqLXwl438vfVBqyYov2z0LJeoqA==}
+  /lucide-react@0.263.1(react@18.2.0):
+    resolution: {integrity: sha512-keqxAx97PlaEN89PXZ6ki1N8nRjGWtDa4021GFYLNj0RgruM5odbpl8GHTExj0hhPq3sF6Up0gnxt6TSHu+ovw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
